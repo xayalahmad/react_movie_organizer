@@ -12,7 +12,16 @@ const FavoritesPage = () => {
   const listName = useSelector(selectFavName);
 
   useEffect(() => {
-    new Splide("#image-carousel").mount();
+
+
+
+
+    var splide = new Splide( '.splide', {
+      perPage: 1,
+      rewind : true,
+    } );
+    
+    splide.mount();
   }, []);
 
   return (
