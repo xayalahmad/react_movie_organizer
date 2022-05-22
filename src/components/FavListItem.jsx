@@ -6,6 +6,7 @@ import styled from "./favListİtem.css";
 const   FavListItem = ({ id, poster, title, year }) => {
 
   return (
+    <>
     <div className="favlistContainer">
     
       <a href={config.moviesUrl + id + "/"} target="_blank">
@@ -16,6 +17,7 @@ const   FavListItem = ({ id, poster, title, year }) => {
       </p>
       <p className="favItemYear">{year}</p>
     </div>
+    </>
   );
 };
 

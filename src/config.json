@@ -1,5 +1,7 @@
 {
-    "apiKey": "c7a5c33b",
+    "apiKey": "42c2d681",
     "apiUrl": "http://www.omdbapi.com/",
-    "listUrl": "https://acb-api.algoritmika.org"
+    "listUrl": "https://acb-api.algoritmika.org",
+    "moviesUrl": "https://www.imdb.com/title/"
+
 }

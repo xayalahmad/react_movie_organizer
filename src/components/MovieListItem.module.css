@@ -49,6 +49,7 @@
 
 @media only screen and (max-width: 400px) {
   .poster {
+    font-size: 10px;
     width: 120px;
   }
   #favButton {
@@ -62,6 +63,7 @@
   }
   #favButton {
     width: 80px;
+    font-size: 10px;
   }
   h3 {
     font-size: 20px;
