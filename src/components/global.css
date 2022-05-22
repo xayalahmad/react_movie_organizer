@@ -1,5 +1,10 @@
 .bgYellow{
     background-color: #E2B616;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.bgYellow:hover{
+    background-color: #c19d19;
 }
 .textYellow{
     background-color: #E2B616;

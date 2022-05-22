@@ -30,7 +30,7 @@ function  Favorites() {
   };
 
   return (
-    <div className="favorites mt-4">
+    <div className="favorites mt-4 border-0 col-md-4 col-12">
       <input
         placeholder="New list name: "
         className="favorites__name rounded"
@@ -40,6 +40,8 @@ function  Favorites() {
       <ul className="list-group">
         {favs.map((f) => (
           <li key={f.id} className="list-group-item">
+            <div className="d-flex justify-content-between align-items-center">
+
             {f.title} {f.year}
             <button
               type="button"
@@ -47,9 +49,10 @@ function  Favorites() {
               onClick={() => {
                 dispatch(removeMovie({ id: f.id }));
               }}
-            >
-              X
+              >
+              <i class="fas fa-trash-alt"></i>
             </button>
+              </div>
           </li>
         ))}
       </ul>

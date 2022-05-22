@@ -25,12 +25,12 @@ export default function MainPage() {
   return (
     <div className="container">
       <div className="row justify-content-between">
-        <div className="col-md-8 col-12">
+        <div className="col-md-7 col-12">
           <Search onSearch={onSearchHandle} />
           <MovieList movies={films} />
         </div>
 
-        <div className="col-md-3 col-12">
+        <div className="col-md-4 col-12">
           <Favorites />
         </div>
       </div>
