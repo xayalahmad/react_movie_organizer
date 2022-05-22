@@ -16,9 +16,8 @@ const FavoritesPage = () => {
   }, []);
 
   return (
-    <div>
-      <h3>Your Favourites films</h3>
-      <p>{listName}</p>
+    <div className="container mt-5">
+      <h2>{listName}</h2>
       {/* <ul>
         {favs.map((m) => (
           <li key={m.id}>

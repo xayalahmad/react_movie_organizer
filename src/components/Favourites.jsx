@@ -36,6 +36,7 @@ function  Favorites() {
         className="favorites__name rounded"
         defaultValue="Example List"
         onChange={(e) => setListName(e.target.value)}
+        disabled={apiID.api}
       />
       <ul className="list-group">
         {favs.map((f) => (
@@ -50,7 +51,7 @@ function  Favorites() {
                 dispatch(removeMovie({ id: f.id }));
               }}
               >
-              <i class="fas fa-trash-alt"></i>
+              <i className="fas fa-trash-alt"></i>
             </button>
               </div>
           </li>
@@ -58,7 +59,11 @@ function  Favorites() {
       </ul>
       {apiID.api 
       ?
-       <Link to= {`/favorite/${apiID.api}`} >Go to List</Link> :
+       <Link className="text-decoration-none" to= {`/favorite/${apiID.api}`} >
+         <div  className="favorites__save rounded col-12">
+         Go to List
+         </div>
+         </Link> :
        <button onClick={handleSave} className="favorites__save rounded" >Save</button>
       }
     </div>

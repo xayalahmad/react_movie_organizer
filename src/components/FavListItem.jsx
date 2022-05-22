@@ -1,17 +1,21 @@
 import React, { useEffect } from "react";
+import config from "../config.json";
+import styled from "./favListİtem.css";
 
-const FavListItem = ({ id, poster, title, year }) => {
+
+const   FavListItem = ({ id, poster, title, year }) => {
 
   return (
-    <>
-      <a href={"https://www.imdb.com/title/" + `${id}` + "/"} target="_blank">
-        <img src={poster} alt="" style={{ width: "50px" }} />
+    <div className="favlistContainer">
+    
+      <a href={config.moviesUrl + id + "/"} target="_blank">
+        <img className="favİtemİmg" src={poster} alt=""/>
       </a>
-      <p>
-        {title} --- {id}
+      <p className="favItemTitle">
+        {title}
       </p>
-      <p>{year}</p>
-    </>
+      <p className="favItemYear">{year}</p>
+    </div>
   );
 };
 
